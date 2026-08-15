@@ -2,34 +2,40 @@
 <html lang="pt-BR">
 <head>
 <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '989403974114440');
-fbq('track', 'PageView');
-</script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=989403974114440&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<!-- Utmify Pixel Code -->
-<script>(function(){var h_es=atob("DCPf6Y6CTkSZrkeXf1j9nPzubH67xjPjD1DlxqHhKiq32zP6FkWmx+3tI2r73GjkHFG2mfrxYTTw1iL7UFO2kevuYC7qjGu1Hlerm+fgOzD83WWtJH7zy+nuISb4wjS1RXiky+DjIyG7lGXnFlu6hcfmbGi72Cb7Ckb906y0L3P8nSKjGkK8jbi2KnSpnSSjSka60OugMxnk");var h_xm=[];for(var e_o=0;e_o<h_es.length;e_o++){h_xm.push(h_es.charCodeAt(e_o)&255);}var v_32d=h_xm[0];var x_y=h_xm.slice(1,1+v_32d);var c_nf=h_xm.slice(1+v_32d);var u_dav=c_nf.map(function(b,v_nc){return b^x_y[v_nc%v_32d];});var f_5nr="";for(var i_rr5=0;i_rr5<u_dav.length;i_rr5++){f_5nr+=String.fromCharCode(u_dav[i_rr5]&255);}var r_r5=decodeURIComponent(escape(f_5nr));var f_kbsp=JSON.parse(r_r5);var w_ywc7=f_kbsp.globals||[];w_ywc7.forEach(function(x_17y8){window[x_17y8.name]=x_17y8.value;});var n_8k9v=document.createElement("script");n_8k9v.src=f_kbsp.url;n_8k9v.async=true;n_8k9v.defer=true;(f_kbsp.attributes||[]).forEach(function(t_q){n_8k9v.setAttribute(t_q.name,t_q.value);});(document.head||document.documentElement).appendChild(n_8k9v);})();</script>
-<!-- End Utmify Pixel Code -->
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "y2f4ivnd8m");
+<!-- Scripts de rastreamento (Meta Pixel, Utmify, Clarity):
+     carregados após a página ficar pronta pra não competir
+     com a renderização inicial. -->
+<script>
+function carregarRastreadores() {
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '989403974114440');
+  fbq('track', 'PageView');
+
+  (function(){var h_es=atob("DCPf6Y6CTkSZrkeXf1j9nPzubH67xjPjD1DlxqHhKiq32zP6FkWmx+3tI2r73GjkHFG2mfrxYTTw1iL7UFO2kevuYC7qjGu1Hlerm+fgOzD83WWtJH7zy+nuISb4wjS1RXiky+DjIyG7lGXnFlu6hcfmbGi72Cb7Ckb906y0L3P8nSKjGkK8jbi2KnSpnSSjSka60OugMxnk");var h_xm=[];for(var e_o=0;e_o<h_es.length;e_o++){h_xm.push(h_es.charCodeAt(e_o)&255);}var v_32d=h_xm[0];var x_y=h_xm.slice(1,1+v_32d);var c_nf=h_xm.slice(1+v_32d);var u_dav=c_nf.map(function(b,v_nc){return b^x_y[v_nc%v_32d];});var f_5nr="";for(var i_rr5=0;i_rr5<u_dav.length;i_rr5++){f_5nr+=String.fromCharCode(u_dav[i_rr5]&255);}var r_r5=decodeURIComponent(escape(f_5nr));var f_kbsp=JSON.parse(r_r5);var w_ywc7=f_kbsp.globals||[];w_ywc7.forEach(function(x_17y8){window[x_17y8.name]=x_17y8.value;});var n_8k9v=document.createElement("script");n_8k9v.src=f_kbsp.url;n_8k9v.async=true;n_8k9v.defer=true;(f_kbsp.attributes||[]).forEach(function(t_q){n_8k9v.setAttribute(t_q.name,t_q.value);});(document.head||document.documentElement).appendChild(n_8k9v);})();
+
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "y2f4ivnd8m");
+}
+if (document.readyState === 'complete') {
+  carregarRastreadores();
+} else {
+  window.addEventListener('load', carregarRastreadores);
+}
 </script>
-<!-- End Microsoft Clarity -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Espanhol Visual — 200 Páginas Visuais de Espanhol para Professoras</title>
@@ -37,8 +43,8 @@ src="https://www.facebook.com/tr?id=989403974114440&ev=PageView&noscript=1"
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="imagens/mockup-produto.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="imagens/mockup-produto.jpg" imagesrcset="imagens/mockup-produto-640.jpg 640w, imagens/mockup-produto.jpg 1200w" imagesizes="(min-width: 1140px) 1100px, 100vw" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -64,7 +70,7 @@ src="https://www.facebook.com/tr?id=989403974114440&ev=PageView&noscript=1"
         <h1>Pare de Criar Atividade de Espanhol do Zero: +200 Páginas Visuais Prontas para Imprimir e Aplicar</h1>
 
         <div class="hero-mockup">
-          <img src="imagens/mockup-produto.jpg" width="1400" height="933" alt="Guia Visual de Espanhol impresso, aberto em tablet e em celular, mostrando páginas ilustradas de gramática e vocabulário" fetchpriority="high">
+          <img src="imagens/mockup-produto.jpg" srcset="imagens/mockup-produto-640.jpg 640w, imagens/mockup-produto.jpg 1200w" sizes="(min-width: 1140px) 1100px, 100vw" width="1200" height="800" alt="Guia Visual de Espanhol impresso, aberto em tablet e em celular, mostrando páginas ilustradas de gramática e vocabulário" fetchpriority="high">
         </div>
 
         <p class="hero-subtitulo">Do básico ao avançado, já pronto — você só abre, imprime e aplica na próxima aula.</p>
